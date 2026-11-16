@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: aus-energy-intelligence
+Version: 0.1.0
+Summary: Australian energy market data engineering platform
+Requires-Python: <3.12,>=3.11
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"

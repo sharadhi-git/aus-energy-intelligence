@@ -1,4 +1,4 @@
-# Australian Energy Market Data Platform
+# Aus Energy Intelligence
 
 ## Project Overview 
 

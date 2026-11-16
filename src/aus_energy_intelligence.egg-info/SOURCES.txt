@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/aus_energy_intelligence.egg-info/PKG-INFO
+src/aus_energy_intelligence.egg-info/SOURCES.txt
+src/aus_energy_intelligence.egg-info/dependency_links.txt
+src/aus_energy_intelligence.egg-info/requires.txt
+src/aus_energy_intelligence.egg-info/top_level.txt
+src/energy_platform/__init__.py
+src/energy_platform/ingestion/__init__.py

@@ -1,0 +1,23 @@
+[build-system]
+requires  = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aus-energy-intelligence"
+version = "0.1.0"
+description = "Australian energy market data engineering platform"
+requires-python = ">=3.11,<3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest","ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"

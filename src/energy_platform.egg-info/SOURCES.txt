@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/energy_platform/__init__.py
+src/energy_platform.egg-info/PKG-INFO
+src/energy_platform.egg-info/SOURCES.txt
+src/energy_platform.egg-info/dependency_links.txt
+src/energy_platform.egg-info/top_level.txt
+src/energy_platform/ingestion/__init__.py
