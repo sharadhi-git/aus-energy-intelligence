@@ -13,3 +13,10 @@ data/processed
 #python cache
 __pycache__/
 .pytest_cache/
+
+# Python packaging metadata
+*.egg-info/
+
+# Python build artifacts
+build/
+dist/
