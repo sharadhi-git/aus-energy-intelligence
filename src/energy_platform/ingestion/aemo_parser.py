@@ -1,7 +1,7 @@
 """
 File        : aemo_parser.py
 Project     : aus enregy intelligence
-Description : create the parser fiel to read records from csv files
+Description : create the parser file to read records from csv files
 
 Author      : Sharadhi Gunathilake
 Created     : 2026-11-20
@@ -12,6 +12,7 @@ Version     : 1.0
 import csv
 from dataclasses import dataclass
 from pathlib import Path
+from typing import TextIO
 
 #Type aliases
 TableKey = tuple[str, str, str]
@@ -25,13 +26,14 @@ class ValidationResult:
     missing_schemas: dict[TableKey, int]
     schema_mismatches: dict[TableKey, int]
 
+def parse_aemo_csv(file: TextIO)->list[list[str]]:
+    return list(csv.reader(file))
+
+
 def read_aemo_file(file_path: str | Path) -> list[list[str]]:
     records = []
     with open(file_path, "r", newline="", encoding="utf-8") as file:
-        reader = csv.reader(file)
-        for line in reader:
-            records.append(line)
-    return records
+        return parse_aemo_csv(file)
 
 def validate_aemo_records(records: list[list[str]])-> ValidationResult:
     schemas = {} # here schemas stand for col names in each table

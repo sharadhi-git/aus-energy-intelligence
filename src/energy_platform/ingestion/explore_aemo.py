@@ -1,7 +1,7 @@
 """
 File        : explore_aemo.py
 Project     : aus enregy intelligence
-Description : create the parser to read the csv file
+Description : mannually explore csv data files 
 
 Author      : Sharadhi Gunathilake
 Created     : 2026-11-16
@@ -16,7 +16,6 @@ from energy_platform.ingestion.profile_aemo import extract_table,profile_missing
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 RAW_DATA_DIR = PROJECT_ROOT / "data" / "raw"
 file_path = RAW_DATA_DIR / "PUBLIC_DISPATCHIS_202611141300_0000000548525946.CSV"
-#PUBLIC_DISPATCHIS_202611141300_0000000548525946.CSV
 records=read_aemo_file(file_path)
 validation_results = validate_aemo_records(records)
 print("\nTable schemas:")
