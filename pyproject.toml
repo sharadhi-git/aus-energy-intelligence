@@ -7,7 +7,9 @@ name = "aus-energy-intelligence"
 version = "0.1.0"
 description = "Australian energy market data engineering platform"
 requires-python = ">=3.11,<3.12"
-dependencies = []
+dependencies = [
+    "pyarrow>=18,<24",
+]
 
 [project.optional-dependencies]
 dev = ["pytest","ruff"]
