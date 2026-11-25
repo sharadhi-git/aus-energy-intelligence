@@ -4,6 +4,7 @@
 #local datasets
 data/raw
 data/processed
+data/manifest
 
 #Environment variables and credentials
 .env
